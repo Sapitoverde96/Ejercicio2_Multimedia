@@ -24,7 +24,7 @@ fun listar() {
 fun pendientes() {
     for (tarea in Tareas) {
         if (!tarea.startsWith("[X]")) {
-            println(tarea)
+            println("[ ] $tarea")
         }
     }
 }
