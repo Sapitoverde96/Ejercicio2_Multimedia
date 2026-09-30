@@ -75,9 +75,7 @@ fun main() {
                     println()
                     print("Fila ${fila[0][0]}: ")
                     for (asiento in fila) {
-                        if (!asientosReservados.containsKey(asiento)) {
-                            print("$asiento ")
-                        }
+                        print("$asiento ")
                     }
                 }
                 println()

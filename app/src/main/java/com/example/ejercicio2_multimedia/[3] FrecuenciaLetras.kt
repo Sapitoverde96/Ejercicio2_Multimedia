@@ -15,8 +15,8 @@ fun main() {
         }
     }
     println("Para la palabra introducida:")
-    val ordenado = frecuenciaLetras.toList().sortedBy {
-        (_, valor) -> valor
-    }.asReversed().toMap()
-    println(ordenado)
+    val ordenado = frecuenciaLetras.toList().sortedBy { (_, frecuencia) -> frecuencia }.asReversed()
+    for ((letra, frecuencia) in ordenado) {
+        println("$letra: $frecuencia")
+    }
 }
